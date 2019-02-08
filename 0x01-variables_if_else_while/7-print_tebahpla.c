@@ -11,7 +11,7 @@ int main(void)
 {
 	char voca;
 
-	for (voca = 'z'; voca >= 'a'; voca--)
+	for (voca = 122; voca >= 97; voca--)
 	{
 		putchar(voca);
 	}
