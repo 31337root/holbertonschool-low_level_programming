@@ -12,9 +12,7 @@ int main(void)
 	char voca;
 
 	for (voca = 'z'; voca >= 'a'; voca--)
-	{
 		putchar(voca);
-	}
 	putchar('\n');
 	return (0);
 }
