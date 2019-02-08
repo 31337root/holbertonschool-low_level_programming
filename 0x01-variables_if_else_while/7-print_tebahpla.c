@@ -9,7 +9,7 @@
 int main(void)
 
 {
-	char voca;
+	int voca;
 
 	for (voca = 122; voca >= 97; voca--)
 	{
