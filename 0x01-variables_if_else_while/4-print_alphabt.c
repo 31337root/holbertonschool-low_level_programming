@@ -13,10 +13,11 @@ int main(void)
 
 	for (voca = 'a'; voca <= 'z'; voca++)
 	{
-	if (voca != 'q' && voca != 'e')
-	{
-	putchar(voca);
-	}
+		if (voca != 'q' && voca != 'e')
+		{
+			putchar(voca);
+		}
 	}
 	putchar('\n');
+	return (0);
 }
