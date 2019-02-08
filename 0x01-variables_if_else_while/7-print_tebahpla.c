@@ -9,9 +9,9 @@
 int main(void)
 
 {
-	int voca;
+	char voca;
 
-	for (voca = 122; voca >= 97; voca--)
+	for (voca = 'z'; voca >= 'a'; voca--)
 	{
 		putchar(voca);
 	}
