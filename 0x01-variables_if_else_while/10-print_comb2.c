@@ -8,80 +8,20 @@
 
 int main(void)
 {
-	int num;
+	int num1, num2;
 
-	for (num = 48; num <= 57; num++)
+	for (num1 = 48; num1 <= 57; num1++)
 	{
-		putchar(48);
-		putchar(num);
-		putchar(44);
-		putchar(' ');
-	}
-	for (num = 48; num <= 57; num++)
-	{
-		putchar(49);
-		putchar(num);
-		putchar(44);
-		putchar(' ');
-	}
-	for (num = 48; num <= 57; num++)
-	{
-		putchar(50);
-		putchar(num);
-		putchar(44);
-		putchar(' ');
-	}
-	for (num = 48; num <= 57; num++)
-	{
-		putchar(51);
-		putchar(num);
-		putchar(44);
-		putchar(' ');
-	}
-	for (num = 48; num <= 57; num++)
-	{
-		putchar(52);
-		putchar(num);
-		putchar(44);
-		putchar(' ');
-	}
-	for (num = 48; num <= 57; num++)
-	{
-		putchar(53);
-		putchar(num);
-		putchar(44);
-		putchar(' ');
-	}
-	for (num = 48; num <= 57; num++)
-	{
-		putchar(54);
-		putchar(num);
-		putchar(44);
-		putchar(' ');
-	}
-	for (num = 48; num <= 57; num++)
-	{
-		putchar(55);
-		putchar(num);
-		putchar(44);
-		putchar(' ');
-	}
-	for (num = 48; num <= 57; num++)
-	{
-		putchar(56);
-		putchar(num);
-		putchar(44);
-		putchar(' ');
-	}
-	for (num = 48; num <= 57; num++)
-	{
-		putchar(57);
-		putchar(num);
-		if (num != 57)
+		for (num2 = 48; num2 <= 57; num2++)
+		{
+			putchar(num1);
+			putchar(num2);
+			if (num1 != 57 || num2 != 57)
 			{
 				putchar(44);
 				putchar(' ');
 			}
+		}
 	}
 	putchar('\n');
 	return (0);
