@@ -3,8 +3,6 @@
 /**
  *
  * jack_bauer - prints the whole minutes of the long day of Jack
- * @hor: manage the hours
- * @min: manage the minutes
  * Return: The whole minutes of the long day of Jack
  *
 */
