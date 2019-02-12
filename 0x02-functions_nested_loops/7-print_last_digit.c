@@ -4,6 +4,7 @@
  *print_last_digit - print the las digit of a number
  *@num: value to process
  *Return: the remainder of the variable
+ *
 */
 
 int print_last_digit(int num)
