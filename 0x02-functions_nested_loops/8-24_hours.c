@@ -3,7 +3,7 @@
 /**
  * jack_bauer - prints the whole minutes of the long day of Jack
  * 
- *
+ * Return: The whole minutes of the long day of Jack
 */
 
 
