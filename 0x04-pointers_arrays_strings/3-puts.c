@@ -2,8 +2,8 @@
 
 /**
  * _puts - Function to print a string.
- * Description: 
- * @str: 
+ * Description: Print every character of str pointer.
+ * @str: Parameter to be processed.
  * Return: void.
 */
 
