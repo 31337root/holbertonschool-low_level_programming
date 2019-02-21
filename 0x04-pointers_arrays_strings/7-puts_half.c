@@ -23,7 +23,7 @@ void puts_half(char *str)
 	}
 	else
 	{
-		_putchar(leng + 48);
+		_putchar((c / 2) + 48);
 	}
 	_putchar('\n');
 }
