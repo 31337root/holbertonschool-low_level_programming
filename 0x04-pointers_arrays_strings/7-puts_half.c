@@ -13,6 +13,7 @@ void puts_half(char *str)
 
 	for (leng = 0; str[leng] != '\0'; leng++)
 	{}
+	leng--;
 	c = leng;
 	if (((leng) % 2) == 0)
 	{
@@ -23,7 +24,8 @@ void puts_half(char *str)
 	}
 	else
 	{
-		_putchar((c / 2) + 48);
+		c = c / 2;
+		_putchar(c + 48);
 	}
 	_putchar('\n');
 }
