@@ -11,16 +11,16 @@
 
 char *_strncpy(char *dest, char *src, int n)
 {
-	int c;
+	int count;
 
-	for (c = 0; c < n && dest[c] != '\0'; c++)
+	for (count = 0; count < n && dest[count] != '\0'; count++)
 	{
-		dest[c] = src[c];
+		dest[count] = src[count];
 	}
-	while (c < n)
+	while ((count + 1) < n)
 	{
-		dest[c] = '\0';
-		c++;
+		dest[count] = '\0';
+		count++;
 	}
 	return (dest);
 }
