@@ -22,7 +22,7 @@ char *_strchr(char *s, char c)
 	}
 	else if (s[count] != c)
 	{
-		location = "NULL";
+		return (0);
 	}
 	return (location);
 }
