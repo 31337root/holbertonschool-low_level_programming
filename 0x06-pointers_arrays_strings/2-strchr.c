@@ -21,11 +21,7 @@ char *_strchr(char *s, char c)
 	{
 		location = &s[count];
 	}
-	else if (s[count] == '\0')
-	{
-		location = &s[count];
-	}
-	else
+	else if (s[count] != c)
 	{
 		location = "NULL";
 	}
