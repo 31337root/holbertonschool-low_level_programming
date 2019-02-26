@@ -11,18 +11,17 @@
 
 char *_strchr(char *s, char c)
 {
-	char *location;
 	int count;
 
 	for (count = 0; s[count] != c; count++)
 	{}
 	if (s[count] == c)
 	{
-		location = &s[count];
+		return (&s[count]);
 	}
 	else if (s[count] != c)
 	{
-		location = 0;
+		return (0);
 	}
-	return (location);
+	return (s);
 }
