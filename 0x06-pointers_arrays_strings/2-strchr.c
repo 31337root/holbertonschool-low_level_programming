@@ -19,7 +19,7 @@ char *_strchr(char *s, char c)
 	{
 		return (&s[count]);
 	}
-	else if (s[count] != c)
+	if (s[count] != c)
 	{
 		return (0);
 	}
