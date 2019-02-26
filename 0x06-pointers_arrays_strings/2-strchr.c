@@ -12,7 +12,6 @@
 char *_strchr(char *s, char c)
 {
 	char *location;
-	char *undefined = 0;
 	int count;
 
 	for (count = 0; s[count] != c; count++)
@@ -21,9 +20,9 @@ char *_strchr(char *s, char c)
 	{
 		location = &s[count];
 	}
-	else if (s[count] != c)
+	else if(s[count] != c)
 	{
-		location = undefined;
+		location = 0;
 	}
 	return (location);
 }
