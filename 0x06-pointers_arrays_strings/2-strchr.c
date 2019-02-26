@@ -1,4 +1,5 @@
 #include "holberton.h"
+#define NULL 0
 
 /**
  * *_strchr - Function that locates a character in a string.
