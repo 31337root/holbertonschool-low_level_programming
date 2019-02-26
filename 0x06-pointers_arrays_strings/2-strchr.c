@@ -12,16 +12,17 @@
 char *_strchr(char *s, char c)
 {
 	int count;
+	char *location;
 
 	for (count = 0; s[count] != c; count++)
 	{}
 	if (s[count] == c)
 	{
-		return (&s[count]);
+		location = &s[count];
 	}
 	if (s[count] != c)
 	{
-		return (0);
+		location = 0;
 	}
-	return (s);
+	return (location);
 }
