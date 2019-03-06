@@ -11,8 +11,13 @@
 
 char *_strdup(char *str)
 {
-	int i;
-	char *strcpy = malloc(sizeof(str) * 10);
+	int i, i0;
+	char *strcpy;
+
+	for (i0 = 0; str[i0] != '\0'; i0++)
+	{}
+
+	strcpy = malloc(sizeof(str) * i0);
 
 	if (str == NULL || strcpy == NULL)
 	{
