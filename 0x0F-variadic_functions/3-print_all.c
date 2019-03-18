@@ -12,7 +12,7 @@
 void print_all(const char * const format, ...)
 {
 	va_list arglist;
-	int c, i, count = 0;
+	int i, count = 0;
 	double f;
 	char *s;
 
@@ -22,8 +22,7 @@ void print_all(const char * const format, ...)
 		switch (format[count])
 		{
 			case 'c':
-				c = va_arg(arglist, int);
-				printf("%c, ", c);
+				printf("%c, ", va_arg(arglist, int));
 			break;
 
 			case 'i':
@@ -39,16 +38,13 @@ void print_all(const char * const format, ...)
 			case 's':
 				s = va_arg(arglist, char *);
 				if (s != '\0')
-				{
 					printf("%s", s);
-				}
 				if (s == '\0')
-				{
 					printf("(nil)");
-				}
 			break;
 		}
 		++count;
 	}
+	va_end(arglist);
 	printf("\n");
 }
