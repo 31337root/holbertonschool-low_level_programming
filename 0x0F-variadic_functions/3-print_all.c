@@ -40,7 +40,11 @@ void print_all(const char * const format, ...)
 				s = va_arg(arglist, char *);
 				if (s != '\0')
 				{
-				printf("%s", s);
+					printf("%s", s);
+				}
+				if (s == '\0')
+				{
+					printf("(nil)");
 				}
 			break;
 		}
