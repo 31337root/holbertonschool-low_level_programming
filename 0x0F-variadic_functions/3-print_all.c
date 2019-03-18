@@ -23,15 +23,12 @@ void print_all(const char * const format, ...)
 			case 'c':
 				printf("%c, ", va_arg(arglist, int));
 			break;
-
 			case 'i':
 				printf("%d", va_arg(arglist, int));
 			break;
-
 			case 'f':
 				printf("%f", va_arg(arglist, double));
 			break;
-
 			case 's':
 				s = va_arg(arglist, char *);
 				if (!s)
