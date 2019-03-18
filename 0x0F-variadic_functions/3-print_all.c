@@ -12,8 +12,7 @@
 void print_all(const char * const format, ...)
 {
 	va_list arglist;
-	int i, count = 0;
-	double f;
+	int count = 0;
 	char *s;
 
 	va_start(arglist, format);
@@ -26,23 +25,29 @@ void print_all(const char * const format, ...)
 			break;
 
 			case 'i':
-				i = va_arg(arglist, int);
-				printf("%d, ", i);
+				printf("%d", va_arg(arglist, int));
 			break;
 
 			case 'f':
-				f = va_arg(arglist, double);
-				printf("%f, ", f);
+				printf("%f", va_arg(arglist, double));
 			break;
 
 			case 's':
 				s = va_arg(arglist, char *);
-				if (s != '\0')
-					printf("%s", s);
-				if (s == '\0')
+				if (!s)
+				{
 					printf("(nil)");
+					break;
+				}
+					printf("%s", s);
 			break;
+
+			default:
+			++count;
+			continue;
 		}
+		if (format[count + 1] != '\0' && format[count + 1] != 'e')
+			printf(", ");
 		++count;
 	}
 	va_end(arglist);
