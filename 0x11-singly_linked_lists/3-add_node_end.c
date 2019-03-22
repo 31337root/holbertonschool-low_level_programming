@@ -16,6 +16,13 @@ int _strlen(char *s)
 	return (c);
 }
 
+/**
+ * add_node_end - function that adds a new node at the end of a list_t list.
+ * @head: Adrres of the first node.
+ * @str: String to be copied.
+ * Return: The addres of the new node.
+*/
+
 list_t *add_node_end(list_t **head, const char *str)
 {
 	list_t *new_node, *temp;
