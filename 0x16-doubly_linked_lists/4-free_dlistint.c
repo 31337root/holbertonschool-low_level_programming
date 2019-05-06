@@ -1,10 +1,9 @@
 #include "lists.h"
 
 /**
- *
- *
- *
- *
+ * free_dlistint - function that free a dlistint_t list.
+ * @head: Doble linked list to be freed.
+ * Return: void.
 */
 
 void free_dlistint(dlistint_t *head)
@@ -18,5 +17,4 @@ void free_dlistint(dlistint_t *head)
 		free(head->prev);
 	}
 	free(head);
-	return;
 }
