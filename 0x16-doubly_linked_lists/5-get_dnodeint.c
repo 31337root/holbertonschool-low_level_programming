@@ -1,10 +1,11 @@
 #include "lists.h"
 
 /**
- *
- *
- *
- *
+ * get_dnodeint_at_index - function that returns the nth node of a
+ * dlistint_t linked list.
+ * @head: Doble linked list where look by index.
+ * @index: Position to be found.
+ * Return: (Success) Adress of the asked index, (failure) NULL.
 */
 
 dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
