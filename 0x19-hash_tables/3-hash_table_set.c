@@ -10,7 +10,7 @@
 
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
-unsigned long int index, equal = 0;
+unsigned long int index, equal;
 hash_node_t *new_node = NULL, *temp = NULL;
 
 if (key && ht)
@@ -30,6 +30,7 @@ if (key && ht)
 			{	temp = ht->array[index];
 				while (ht->array[index]->next)
 				{	ht->array[index] = ht->array[index]->next;
+					equal = strcmp((const char *)ht->array[index]->key, (char *) key);
 					if (equal == 0)
 					{	ht->array[index]->value = strdup(value);
 						ht->array[index] = temp;
