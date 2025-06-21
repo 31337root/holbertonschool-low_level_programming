@@ -11,6 +11,6 @@
 int main(void)
 {
 	char error_message[61] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
-	write(2, error_message, strlen(error_message));
+	write(2, error_message, 61);
 	return (1);
 }
