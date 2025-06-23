@@ -17,4 +17,4 @@ int print_last_digit(int num)
 	}
 	_putchar(num + '0');
 	return (num);
-}i
+}
