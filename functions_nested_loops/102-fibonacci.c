@@ -10,7 +10,7 @@ int main(void)
 	b = 2;
 	
 	printf("%ld, ", a);
-	printf("%ld\n", b);
+	printf("%ld, ", b);
 
 	while (c < 8000000000)
 	{
