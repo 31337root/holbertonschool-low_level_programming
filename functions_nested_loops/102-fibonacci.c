@@ -1,6 +1,8 @@
 #include <stdio.h>
 
-void main(void)
+/* Return 1 Success */
+
+int main(void)
 
 {
 	long a, b, c;
@@ -18,4 +20,5 @@ void main(void)
 		b = c;
 	}
 	putchar('\n');
+	return (1);
 }
