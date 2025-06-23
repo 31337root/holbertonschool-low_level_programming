@@ -12,7 +12,7 @@ int main(void)
 	printf("%ld, ", a);
 	printf("%ld, ", b);
 
-	while (c < 13000000000)
+	while (c < 12000000000)
 	{
 		c = a + b;
 		a = b;
