@@ -12,13 +12,14 @@ int main(void)
 	printf("%ld, ", a);
 	printf("%ld, ", b);
 
-	while (c < 8000000000)
+	while (c < 2000000000)
 	{
 		c = a + b;
 		a = b;
 		printf("%ld, ", c);
 		b = c;
 	}
-	putchar('\n');
+	c = a + b;
+	printf("%ld\n", c);
 	return (1);
 }
