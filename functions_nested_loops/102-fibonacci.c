@@ -1,8 +1,8 @@
 #include <stdio.h>
 
-/* Return 1 Success */
+/* Return 0 Success */
 
-void main(void)
+int main(void)
 
 {
 	long a, b, c;
@@ -21,4 +21,5 @@ void main(void)
 	}
 	c = a + b;
 	printf("%ld\n", c);
+	return (0);
 }
