@@ -2,7 +2,7 @@
 
 /* Return 1 Success */
 
-int main(void)
+void main(void)
 
 {
 	long a, b, c;
@@ -21,5 +21,4 @@ int main(void)
 	}
 	c = a + b;
 	printf("%ld\n", c);
-	return (1);
 }
