@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main(void)
+void main(void)
 
 {
 	long a, b, c;
