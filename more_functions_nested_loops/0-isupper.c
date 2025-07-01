@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "main.h"
 
 /**
  * _isupper - Function that return 1 if upper, otherwise 0.
