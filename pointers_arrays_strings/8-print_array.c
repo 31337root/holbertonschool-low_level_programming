@@ -22,7 +22,7 @@ void print_array(int *a, int n)
 		printf("%d\n", a[i]);
 	}
 
-	if else (n > 0)
+	if (n > 0)
 	{
                 printf("%d\n", a[n]);
         }
