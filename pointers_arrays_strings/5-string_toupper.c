@@ -2,12 +2,9 @@
 #include <stdlib.h>
 
 /**
- * *_strncat - Function to concatenate two strings.
- * Description: Concatenate the number of characters given on n.
- * @dest: String to be concatenate.
- * @src: String to be copied.
- * @n: Numer of characters to be copied.
- * Return: char.
+ * *string_toupper - Function to convert lowercase to upper
+ * @a: String to be converted to upper case
+ * Return: char
 */
 
 char *string_toupper(char *a)
