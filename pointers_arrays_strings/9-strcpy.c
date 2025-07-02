@@ -2,8 +2,8 @@
 
 /**
  * _strcpy - Function that copies and string into other variable
- * @*src: Pointer to array to be copied
- * @*dest: Pointer to destination array
+ * @src: Pointer to array to be copied
+ * @dest: Pointer to destination array
  * Return: char.
 */
 
