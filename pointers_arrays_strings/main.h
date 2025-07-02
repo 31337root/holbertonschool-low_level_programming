@@ -1,4 +1,4 @@
-/* Header files for Holberton tasks (0x04. C - Pointers, arrays 
+/* Header files for Holberton tasks (C - Pointers, arrays 
  * and strings)
 */
 
@@ -10,3 +10,4 @@ int _putchar(char c);
 void print_rev(char *s);
 void rev_string(char *s);
 void puts2(char *str);
+void puts_half(char *str);
