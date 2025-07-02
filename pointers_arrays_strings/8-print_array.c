@@ -22,8 +22,8 @@ void print_array(int *a, int n)
 		printf("%d\n", a[i]);
 	}
 
-	else if (n > 0)
+	else
 	{
-                printf("%d\n", a[n]);
+                printf("%d\n", a[0]);
         }
 }
