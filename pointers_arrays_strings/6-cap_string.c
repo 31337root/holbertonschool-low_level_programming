@@ -29,7 +29,7 @@ char *cap_string(char *a)
 						i++;
 						break;
 					}
-					break;
+					i++;
 				}
 			}
 		}
